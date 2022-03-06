@@ -1,17 +1,9 @@
 import ReactDom from 'react-dom'
 import VideoItem from './components/VideoItem'
+import VideoList from './components/VideoList'
 import './index.css'
 
-const VideoList = ({ title, children }) => {
-	return (
-		<div>
-			<h1>{title}</h1>
-			{children}
-		</div>
-	)
-}
-
-const app = (
+const App = () => (
 	<>
 		<VideoList title='Curso de React'>
 			<VideoItem
@@ -30,4 +22,4 @@ const app = (
 	</>
 )
 
-ReactDom.render(app, document.getElementById('root'))
+ReactDom.render(<App />, document.getElementById('root'))

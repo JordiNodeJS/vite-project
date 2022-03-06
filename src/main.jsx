@@ -1,15 +1,15 @@
 import ReactDom from 'react-dom'
 import './index.css'
 
-const Video = props => {
+const Video = ({title, duracion, uploadDate, description}) => {
     return (
     <>
-        <h3>{props.title}</h3>
+        <h3>{title}</h3>
         <div>
-            <span>{props.duracion}</span>
-            <span>{props.uploadDate}</span>
+            <span>{duracion}</span>
+            <span>{uploadDate}</span>
         </div>
-        <p>{props.description}</p>
+        <p>{description}</p>
     </>)
 }
 

@@ -16,7 +16,7 @@ const Video = ({title, duracion, uploadDate, description}) => {
 const app = (
     <>
         <h1>Vamos que podemos.</h1>
-        <Video></Video>
+        <Video title='Componentes' durantion='25:04' uploadDate='06/03/2022' description='Componentes en React'></Video>
     </>
 )
 

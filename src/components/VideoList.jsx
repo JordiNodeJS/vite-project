@@ -1,10 +1,10 @@
-const VideoList = ({ title, children }) => {
-    const videos = children || <p>No hay vídeos</p>
-	return (
-		<div>
-			<h2>{title}</h2>
-			{videos}
-		</div>
-	)
-}
+import styles from './VideoList.module.css'
+
+const VideoList = ({ title, children }) => (
+	<div className={`${styles.wrapperList} ${styles.margin}`}>
+		<h2>{title}</h2>
+		{children || <p>No hay vídeos</p>}
+	</div>
+)
+
 export default VideoList

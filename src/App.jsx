@@ -1,8 +1,9 @@
+import './App.css'
 import VideoItem from './components/VideoItem'
 import VideoList from './components/VideoList'
 
 const App = () => (
-	<>
+	<div className='container'>
 		<VideoList title='Curso de React'>
 			<VideoItem
 				title='Componentes'
@@ -33,9 +34,8 @@ const App = () => (
 			></VideoItem>
 		</VideoList>
 
-		<VideoList title='Curso de Next js'>
-		</VideoList>
-	</>
+		<VideoList title='Curso de Next js'></VideoList>
+	</div>
 )
 
 export default App

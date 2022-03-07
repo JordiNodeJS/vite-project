@@ -1,9 +1,9 @@
-import './App.css'
+import styles from './App.module.css'
 import VideoItem from './components/VideoItem'
 import VideoList from './components/VideoList'
 
 const App = () => (
-	<div className='container'>
+	<div className={styles.container}>
 		<VideoList title='Curso de React'>
 			<VideoItem
 				title='Componentes'
